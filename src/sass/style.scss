@@ -1,17 +1,29 @@
 @import 'libs/bootstrap-reboot.min';
 @import 'base/mixin';
 @import 'base/variables';
-@import 'blocks/page';
+@import 'blocks/leftBlock';
+@import 'blocks/centralBlock';
+@import 'blocks/rightBlock';
 
 
 
 * {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
 }
 .container {
     position: relative;
-    width: 1140px;
-    margin: 0 auto;
+    width: 460px;
+    min-height: 630px;
+    &_large {
+        min-height: 750px;
+    }
+}
+.card {
+    padding: 103px 0 115px 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    width: 1680px;
 }

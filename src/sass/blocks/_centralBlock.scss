@@ -1,0 +1,49 @@
+.center-card {
+    display: flex;
+    align-items: center;
+    &__wrapper {
+        display: grid;
+        grid-template-rows: 215px 215px 115px;
+        row-gap: 47px;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 30px;
+        color: $main-color;
+        opacity: 0.9;
+        margin-bottom: 0;
+    }
+    &__descr {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        color: $main-color;
+        opacity: 0.8;
+    }
+    &__list {
+        margin-left: 0;
+    }
+    &__item {
+        position: relative;
+        margin-top: 10px;
+        left: 20px;
+        list-style-type: none;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        color: $main-color;
+        &::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: $main-color;
+            left: -17px;
+            top: 10px;
+        }
+
+    }
+}
