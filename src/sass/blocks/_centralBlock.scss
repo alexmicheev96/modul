@@ -3,7 +3,7 @@
     align-items: center;
     &__wrapper {
         display: grid;
-        grid-template-rows: 215px 215px 115px;
+        grid-template-rows: 2fr 2fr 1fr;
         row-gap: 47px;
     }
     &__title {

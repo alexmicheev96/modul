@@ -7,23 +7,30 @@
 
 
 
+
 * {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
 }
-.container {
-    position: relative;
-    width: 460px;
-    min-height: 630px;
-    &_large {
-        min-height: 750px;
-    }
-}
 .card {
     padding: 103px 0 115px 0;
     background-color: black;
-    display: flex;
-    justify-content: space-around;
     width: 1680px;
 }
+.container {
+    width: 1475px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    &-inner {
+        position: relative;
+        width: 460px;
+        min-height: 630px;
+        }
+    &-large {
+            min-height: 750px;
+    }
+}
+    
+@import 'blocks/media';
