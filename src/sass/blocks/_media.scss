@@ -127,9 +127,13 @@
             max-width: 540px;
             &-inner {
                 width: 460px;
+                min-height: 650px;
                 margin: 0 auto;
             }
             .center-card {
+                .container-inner {
+                    min-height: 900px;
+                }
                 &__title {
                     font-size: 35px;
                 }

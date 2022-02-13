@@ -4,7 +4,7 @@
     &__wrapper {
         display: grid;
         grid-template-rows: 2fr 2fr 1fr;
-        row-gap: 47px;
+        gap: 3px
     }
     &__title {
         font-weight: 600;
