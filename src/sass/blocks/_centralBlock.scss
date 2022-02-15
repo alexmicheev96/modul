@@ -1,11 +1,5 @@
-.center-card {
-    display: flex;
-    align-items: center;
-    &__wrapper {
-        display: grid;
-        grid-template-rows: 2fr 2fr 1fr;
-        gap: 3px
-    }
+.text {
+    position: relative;
     &__title {
         font-weight: 600;
         font-size: 30px;
@@ -14,36 +8,16 @@
         margin-bottom: 0;
     }
     &__descr {
-        font-style: normal;
+        position: relative;
         font-weight: 500;
         font-size: 15px;
-        line-height: 25px;
+        line-height: 20px;
         color: $main-color;
         opacity: 0.8;
-    }
-    &__list {
-        margin-left: 0;
-    }
-    &__item {
-        position: relative;
-        margin-top: 10px;
-        left: 20px;
-        list-style-type: none;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 25px;
-        color: $main-color;
-        &::before {
-            content: " ";
-            display: block;
-            position: absolute;
-            width: 5px;
-            height: 5px;
-            border-radius: 50%;
-            background-color: $main-color;
-            left: -17px;
-            top: 10px;
+        margin-bottom: 0;
+        &_shift-right{
+            padding-left: 18px;
         }
-
     }
+    
 }

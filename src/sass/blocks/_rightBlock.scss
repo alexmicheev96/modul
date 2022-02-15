@@ -1,12 +1,16 @@
-.right-card {
-    background: url('../img/bg_women.png') center (center/cover)  no-repeat;
-    &__descr {
-        position: absolute;
-        font-weight: 600;
-        font-size: 30px;
-        line-height: 35px;
-        color: $main-color;
-        bottom: 83px;
-        left: 35px;
+.container{
+    &__inner-right {
+        background: url('../img/bg_women.png') center center/cover no-repeat;
+        position: relative;
+        .img-descr {
+            position: absolute;
+            bottom: 83px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 35px;
+            color: $main-color;
+        }
     }
+    
 }

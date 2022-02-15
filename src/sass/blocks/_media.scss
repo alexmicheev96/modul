@@ -1,199 +1,99 @@
-@media (max-width: 1439px) {
-    .card {
-        width: 100%;
-    }
-    .container {
-        width: 1140px;
-        &-inner {
-            width: 360px;
-        }
-    }
-    .left-card {
-        .information {
-            &__wrapper {
-                grid-template-columns: repeat(2, 170px);
-                column-gap: 20px;
-            }
-        }
-    }
-    .center-card {
-        &__descr, &__item {
-            padding-right: 10px;
-            font-size: 16px;
-            line-height: 17px;
-        }
-    }
-}
 @media (max-width: 1200px) {
-    .card {
-        width: 100%;
-        padding: 50px 0 50px 0;
-        .container {
-            width: 960px;
-            justify-content: space-between;
-            &-inner {
-                width: 300px;
-                min-height: 650px;
+    .container{
+        &__inner-right{
+            .img-descr {
+                bottom: 30px;
+                font-size: 22px;
+                line-height: 27px;
             }
         }
-        .title {
-                font-size: 50px;
-                line-height: 50px;
-        }
-        .left-card, .center-card {
-            align-items:stretch;
-        }
-        .left-card {
-            .information {
-                &__wrapper {
-                    grid-template-columns: repeat(2, 1fr );
-                    column-gap: 20px
-                }
-            }
-        }
-        
-        .center-card {
-            &__wrapper{
-                row-gap: 43px;
-            }
-            &__descr { 
-                font-size: 13px;
-                line-height: 17px;
-            }
-            &__item {
-                font-size: 13px;
-                line-height: 17px;
-            }
-            
-        }
-        .right-card {
-            &__descr {
-                font-size: 25px;
-                line-height: 30px;
-            }
-        }
-        
+    }
+    .title {
+        font-size: 50px;
+        line-height: 50px;
+    
     }
 }
 @media (max-width: 992px) {
-    .card {
-        width: 100%;
-        .container {
-            max-width: 720px;
-            &-inner {
-                width: 220px;
-            }
-        }
-        .title {
-            font-size: 40px;
-            line-height: 40px;
-        }
-        .left-card{
-            .information {
-                &__wrapper {
-                    margin-top: 40px;
-                }
-            }
-        }
-        .center-card {
-            &__title {
-                font-size: 24px;
-            }
-            &__wrapper {
-                gap: 20px;
-            }
-            &__descr, &__item {
-                padding-right: 10px;
-                font-size: 13px;
-                line-height: 15px;
-            }
-        }
-        .right-card {
-            &__descr {
-                bottom: 50px;
-                font-size: 16px;
-                line-height: 20px;
-            }
-        }
+.title {
+    font-size: 40px;
+    line-height: 40px;
+}
+.text {
+    &__title{
+        font-size: 23px;
     }
-    
-   
+    &__descr {
+        font-size: 12px;
+        line-height: 17px;
+    }
+}
+.img-descr {
+    bottom: 40px;
+    font-size: 17px;
+    line-height: 23px;
+
+}
 }
 @media (max-width: 768px) {
-    .card {
-        width: 100%;
-        .container {
-            display: block;
-            max-width: 540px;
-            &-inner {
-                width: 460px;
-                min-height: 650px;
-                margin: 0 auto;
-            }
-            .center-card {
-                .container-inner {
-                    min-height: 900px;
-                }
-                &__title {
-                    font-size: 35px;
-                }
-                &__wrapper {
-                    gap: 20px;
-                }
-                &__descr, &__item {
-                    padding-right: 0;
-                    font-size: 23px;
-                    line-height: 23px;
-                }
-            } 
-            .right-card {
-                &__descr {
-                    font-size: 40px;
-                    line-height: 45px;
-                }
-                .container-large {
-                    margin-top: 25px;
-                }
-            }
-        }   
+.title {
+    font-size: 50px;
+}
+.container {
+    .text {
+        margin-top: 5%;
+        &__title {
+            font-size: 23px;
+        }
+        &__descr {
+            font-size: 15px;
+            line-height: 26px;
+        }
     }
+    display: block;
+    width: 100%;
+    &__inner {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        &-central {
+            margin-top: 10%;
+        }
+    }
+    &__inner-right {
+        margin-top: 5%;
+        min-height: 500px;
+        border-radius: 5%;
+        .img-descr {
+            position: absolute;
+            bottom: 83px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 35px;
+            color: $main-color;
+        }
+    }
+}
     
    
 }
 @media (max-width: 576px) {
-    .card {
-        width: 100%;
-        .container {
-            max-width: 100%;
-            padding: 0 10px;
-            &-inner {
-                width: 100%;
-                padding: 10px;
+    .container{
+        .title {
+            font-size: 40px;
+        }
+        &__inner-right{
+            .img-descr {
+                bottom: 40px;
+                font-size: 20px;
+                line-height: 27px;
             }
-        
-            .center-card {
-                &__title {
-                    font-size: 35px;
-                }
-                &__wrapper {
-                    gap: 20px;
-                }
-                &__descr, &__item {
-                    padding-right: 10px;
-                    font-size: 15px;
-                    line-height: 20px;
-                }
-            } 
-            .right-card {
-                &__descr {
-                    width: 100%;
-                    text-align: center;
-                    font-size: 24px;
-                    line-height: 35px;
-                    left: 0;
-                    
-                }
-            }
-        }   
+        }
     }
+    
+    
 }
+
+
+
