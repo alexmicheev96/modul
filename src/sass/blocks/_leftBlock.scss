@@ -1,8 +1,8 @@
 .container {
     &__inner-left {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between
     }
 }
 .title {
@@ -25,23 +25,27 @@
         flex-direction: column;
         justify-content: stretch;
     }
-    &__icon {
+    &__icon-wrapper {
         width: 33px;
         height: 33px;
-        img {
-            width: 100%;
-        }
+    &__icon {
+        width: 100%;
+    }
     }
     &__descr {
         font-size: 15px;
         line-height: 25px;
         color: $main-color;
-        opacity: 0.6;
-        span {
+        
+        &_grey {
+            opacity: 0.6;
+        }
+        &_little {
+            color: $main-color;
             display: block;
             opacity: 1.0;
             display: -webkit-box;
-            -webkit-line-clamp: 3;
+            -webkit-line-clamp: 3;//с помощью этих свойств переполнение после 3 строк заменятеся на троеточие
             -webkit-box-orient: vertical;  
             overflow: hidden;
         }
@@ -60,7 +64,6 @@
     &__skills__wrapper {
         width: 100%;
         display: flex;
-       align-items: stretch;
     }
     &__skills-inner {
         width: 100%;
@@ -80,20 +83,11 @@
         height: 7px;
         background: rgba(255, 255, 255, 0.3);
         border-radius: 10px;
-        span {
+        &_size {
             position: absolute;
             background:$main-color;
             border-radius: 10px;
             height: 100%;
-        }
-        &_size-1 {
-            width: 50%;
-        }
-        &_size-2 {
-            width: 30%;
-        }
-        &_size-3 {
-            width: 70%;
         }
     }
 }

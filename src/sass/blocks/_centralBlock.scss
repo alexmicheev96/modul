@@ -1,5 +1,16 @@
+.container {
+    &__inner-central {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
 .text {
     position: relative;
+    &_mt {
+        margin-top: 50px;
+    }
+
     &__title {
         font-weight: 600;
         font-size: 30px;
@@ -11,9 +22,10 @@
         position: relative;
         font-weight: 500;
         font-size: 15px;
-        line-height: 20px;
+        line-height: 25px;
         color: $main-color;
         opacity: 0.8;
+        margin-top: 15px;
         margin-bottom: 0;
         &_shift-right{
             padding-left: 18px;
