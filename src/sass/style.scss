@@ -14,17 +14,22 @@
     
 }
 .card {
-    background: url('../img/main_bg.png') center center/cover no-repeat ;
+    background: url('../img/main_bg.png');
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 .container {
     max-width: 1680px;
-    margin: 0 auto;
     display: grid;
     padding: 5%;
     grid-template: repeat(1,minmax(635px, auto) ) / repeat(3, 1fr);
     column-gap: 3%;
     transition: 1s all;
+    
 }   
  
 @import 'blocks/media';
